@@ -1,7 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
+    background-color: #ffffff; /* Cor base */
     padding: 0;
     display: flex;
     justify-content: center;
@@ -10,7 +9,7 @@ body {
 }
 
 .container {
-    background-color: #fff;
+    background-color: #f0ede4; /* Tonalidade mais clara da cor base */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -20,6 +19,7 @@ body {
 h1 {
     text-align: center;
     margin-bottom: 20px;
+    color: #8b4513; /* Cor escura para contraste */
 }
 
 .meta {
@@ -27,12 +27,14 @@ h1 {
 }
 
 .meta h2 {
+    text-align: center;
     margin: 0 0 10px 0;
     font-size: 18px;
+    color: #8b4513; /* Cor escura para contraste */
 }
 
 .ruler {
-    background-color: #e0e0e0;
+    background-color: #f5deb3;
     height: 20px;
     border-radius: 10px;
     overflow: hidden;
@@ -40,7 +42,7 @@ h1 {
 }
 
 .progress {
-    background-color: #76c7c0;
+    background-color: #000000; /* Cor do progresso */
     height: 100%;
     border-radius: 10px;
     transition: width 0.5s ease;
@@ -51,7 +53,7 @@ h1 {
     text-align: right;
     margin-top: 5px;
     font-size: 14px;
-    color: #333;
+    color: #8b4513; /* Cor escura para contraste */
 }
 
 button {
@@ -59,54 +61,49 @@ button {
     padding: 5px 10px;
     border: none;
     border-radius: 5px;
-    background-color: #76c7c0;
-    color: white;
+    background-color: #76c7c0; /* Cor do botão */
+    color: white; /* Cor do texto */
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #66b0a8;
+    background-color: #66b0a8; /* Cor do botão ao passar o mouse */
 }
 
-/* Estilo básico do slider */
 .slider {
-    -webkit-appearance: none; /* Remove o estilo padrão do navegador */
-    width: 100%; /* Largura do slider */
-    height: 8px; /* Altura do slider */
-    background: #bdb3b3; /* Cor de fundo da trilha */
-    border-radius: 5px; /* Bordas arredondadas */
-    outline: none; /* Remove o contorno ao focar */
-    opacity: 0.7; /* Opacidade padrão */
-    transition: opacity 0.2s; /* Transição suave */
+    -webkit-appearance: none;
+    width: 100%;
+    height: 8px;
+    background: #bdb3b3; /* Cor da trilha */
+    border-radius: 5px;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity 0.2s;
 }
 
-/* Estilo do "thumb" (a bolinha do slider) */
 .slider::-webkit-slider-thumb {
-    -webkit-appearance: none; /* Remove o estilo padrão */
+    -webkit-appearance: none;
     appearance: none;
-    width: 20px; /* Largura do thumb */
-    height: 20px; /* Altura do thumb */
-    background: #76c7c0; /* Cor do thumb */
-    border-radius: 50%; /* Formato circular */
-    cursor: pointer; /* Cursor ao passar o mouse */
-}
-
-/* Estilo da trilha do slider no Firefox */
-.slider::-moz-range-track {
-    background: #e0e0e0; /* Cor da trilha */
-    border-radius: 5px; /* Bordas arredondadas */
-}
-
-/* Estilo do thumb no Firefox */
-.slider::-moz-range-thumb {
     width: 20px;
     height: 20px;
-    background: #76c7c0;
+    background: #d2691e; /* Cor do thumb */
     border-radius: 50%;
     cursor: pointer;
 }
 
-/* Efeito ao passar o mouse */
+.slider::-moz-range-track {
+    background: #e0e0e0; /* Cor da trilha no Firefox */
+    border-radius: 5px;
+}
+
+.slider::-moz-range-thumb {
+    width: 20px;
+    height: 20 px;
+    background: #76c7c0; /* Cor do thumb no Firefox */
+    border-radius: 50%;
+    cursor: pointer;
+}
+
 .slider:hover {
-    opacity: 1; /* Aumenta a opacidade */
+    opacity: 1; /* Aumenta a opacidade ao passar o mouse */
 }
