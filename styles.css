@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.meta {
+    margin-bottom: 20px;
+}
+
+.meta h2 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+}
+
+.ruler {
+    background-color: #e0e0e0;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress {
+    background-color: #76c7c0;
+    height: 100%;
+    border-radius: 10px;
+    transition: width 0.5s ease;
+}
+
+.percentage {
+    display: block;
+    text-align: right;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+button {
+    margin-top: 5px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #76c7c0;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #66b0a8;
+}
+
+/* Estilo básico do slider */
+.slider {
+    -webkit-appearance: none; /* Remove o estilo padrão do navegador */
+    width: 100%; /* Largura do slider */
+    height: 8px; /* Altura do slider */
+    background: #bdb3b3; /* Cor de fundo da trilha */
+    border-radius: 5px; /* Bordas arredondadas */
+    outline: none; /* Remove o contorno ao focar */
+    opacity: 0.7; /* Opacidade padrão */
+    transition: opacity 0.2s; /* Transição suave */
+}
+
+/* Estilo do "thumb" (a bolinha do slider) */
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Remove o estilo padrão */
+    appearance: none;
+    width: 20px; /* Largura do thumb */
+    height: 20px; /* Altura do thumb */
+    background: #76c7c0; /* Cor do thumb */
+    border-radius: 50%; /* Formato circular */
+    cursor: pointer; /* Cursor ao passar o mouse */
+}
+
+/* Estilo da trilha do slider no Firefox */
+.slider::-moz-range-track {
+    background: #e0e0e0; /* Cor da trilha */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+/* Estilo do thumb no Firefox */
+.slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #76c7c0;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Efeito ao passar o mouse */
+.slider:hover {
+    opacity: 1; /* Aumenta a opacidade */
+}

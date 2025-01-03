@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metas e Progresso</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Minhas Metas</h1>
+        <div class="meta">
+            <h2>Meta 1</h2>
+            <div class="ruler">
+                <div class="progress" id="progress1" style="width: 50%;"></div>
+            </div>
+            <span class="percentage" id="percentage1">%</span>
+            <input type="range" class="slider" id="slider1" min="0" max="100" value="" oninput="updateProgress(0, this.value)">
+        </div>
+        <div class="meta">
+            <h2>Meta 2</h2>
+            <div class="ruler">
+                <div class="progress" id="progress2" style="width: 50%;"></div>
+            </div>
+            <span class="percentage" id="percentage2">%</span>
+            <input type="range" class="slider" id="slider2" min="0" max="100" value="" oninput="updateProgress(1, this.value)">
+        </div>
+        <div class="meta">
+            <h2>Meta 3</h2>
+            <div class="ruler">
+                <div class="progress" id="progress3" style="width: 50%;"></div>
+            </div>
+            <span class="percentage" id="percentage3">%</span>
+            <input type="range" class="slider" id="slider3" min="0" max="100" value="" oninput="updateProgress(2, this.value)">
+        </div>
+        <div class="meta">
+            <h2>Meta 4</h2>
+            <div class="ruler">
+                <div class="progress" id="progress4" style="width: 50%;"></div>
+            </div>
+            <span class="percentage" id="percentage4">%</span>
+            <input type="range" class="slider" id="slider4" min="0" max="100" value="" oninput="updateProgress(3, this.value)">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
